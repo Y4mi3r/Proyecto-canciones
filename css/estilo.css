@@ -1,0 +1,77 @@
+/* tamaño de la pagina */
+.container{
+    min-height: calc(100vh - 100px);
+}
+
+footer{
+    width: 100%;
+    height: 34px;
+}
+
+/* color del error a validar los datos*/
+.error {
+    color: red
+}
+
+/* tamaño y color del logo y de las imagenes */
+#logo{
+    width: 50px;
+    height: 50px;
+    font-family: Impact;
+    color:blue;
+    font-size: 33px;
+}
+#portada1{
+    width: 500px;
+    height: 300px;
+}
+#portada2{
+    width: 500px;
+    height: 300px;
+    -webkit-filter: invert(100%); /* Chrome, Safari, Opera */
+    filter: invert(100%);
+}
+
+/* color de fondo y color de borde*/
+#modal,#navbar,#portada,#canciones,#login,#registro{
+    background-color:rgba(45, 111, 192, 0.103);
+}
+
+/* tipo de fuente y tamaño de las letras*/
+p,a,label{
+    font-family:georgia;
+    font-size: 17px;
+}
+h1,h2,h3,h4{
+    font-family:Impact;
+    font-size: 30px;
+}
+h6{
+    font-family:Impact;
+}
+th{
+    font-family:georgia;
+    font-size: 20px;
+}
+td{
+    font-family:Impact;
+    font-size: 30px;
+    color: blue;
+}
+
+/* ocultamiento y centrado en el footer*/
+@media (max-width: 45em){
+    .hidden{
+        display: none;
+    }
+}
+@media (min-width: 45em){
+    .centrar{
+        text-align: end;
+    }
+}
+@media (max-width: 45em){
+    .centrar{
+        text-align: center;
+    }
+}

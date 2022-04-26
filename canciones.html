@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>OYE - inicio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+  crossorigin="anonymous">
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" id="logo"><img src="./img/logo.png" alt="" id="logo"
+                    class="d-inline-block align-text-center rounded-pill">
+                OYE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav m-auto me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="canciones.html">Canciones</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary m-auto mx-1 my-1" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Contacto</button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="btn btn-primary m-auto mx-1 my-1" role="button">Inicio de Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registro.html" class="btn btn-primary m-auto mx-1 my-1" role="button">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header" id="modal">
+                    <h4 class="modal-title">Contacto</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h6>Correo:</h6>
+                    <p>- info@oye.com</p>
+                    <h6>Teléfono:</h6>
+                    <p>- +57 9 2548 3652</p>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer" id="modal">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+  <main>
+    <div class="container text-center">
+      <div class="py-5">
+        <h1 class="text-center">Canciones</h1>
+        <div class="py-3">
+          <input class="form-control" type="text" id="buscador" placeholder="Buscar...">
+        </div>
+        <div class="row" id="result">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid py-1 bg-primary text-white">
+    <div class="row">
+      <div class="col text-left hidden">
+        Comparte la música
+      </div>
+      <div class="col centrar">
+        &copy; Derechos reservados
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+
+  <script src="./ajax/canciones.js"></script>
+
+</body>
+
+</html>
